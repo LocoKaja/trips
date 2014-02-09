@@ -2,7 +2,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @trip.picture %>
+  <%= image_tag(@trip.picture_url, :width => 200) if @trip.picture.present? %>
 </p>
 
 <p>
